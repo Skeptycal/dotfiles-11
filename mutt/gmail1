@@ -1,0 +1,19 @@
+## Receive options.
+set imap_user=crossroads1112@gmail.com
+set imap_pass=$my_pw_gmail1
+set folder = imaps://crossroads1112@imap.gmail.com/
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = +Sent
+
+## Send options.
+set smtp_url=smtps://crossroads1112:$my_pw_gmail1@smtp.gmail.com
+set realname='Chad Sharp'
+set from=crossroads1112@gmail.com
+set hostname="gmail.com"
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+## Hook -- IMPORTANT!
+account-hook $folder "set imap_user=crossroads1112@gmail.com imap_pass=$my_pw_gmail1"
