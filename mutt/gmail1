@@ -2,9 +2,10 @@
 set imap_user=crossroads1112@gmail.com
 set imap_pass=$my_pw_gmail1
 set folder = imaps://crossroads1112@imap.gmail.com/
-set spoolfile = +INBOX
-set postponed = +Drafts
-set record = +Sent
+set spoolfile = imaps://imap.gmail.com:993/INBOX
+set postponed = "+[Gmail]/Drafts"
+set record="+[Gmail]/Sent Mail"
+mailboxes "imaps://imap.gmail.com/INBOX" "imaps://imap.gmail.com/Drafts" "imaps://imap.gmail.com/Sent" "imaps://imap.gmail.com/Spam" "imaps://imap.gmail.com/Trash"
 
 ## Send options.
 set smtp_url=smtps://crossroads1112:$my_pw_gmail1@smtp.gmail.com
