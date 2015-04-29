@@ -19,7 +19,7 @@ set strict_threads=yes
 unset collapse_unread
 bind index - collapse-thread
 bind index _ collapse-all
-# Sidebar -- IMPORTANT:  REQUIRES mutt-sidebar patch
+## Sidebar -- IMPORTANT:  REQUIRES mutt-sidebar patch
 set sidebar_visible = yes
 set sidebar_width=38
 set sidebar_shortpath = yes
@@ -116,16 +116,17 @@ color body blue default "( *[-+=#*~_]){6,}"
 
 ## crossroads1112@gmail.com
 source "~/.mutt/gmail1"
-folder-hook crossroads1112@gmail.com/ 'source ~/.mutt/gmail1'
-
-## Cub Gmail
-source "~/.mutt/cubgmail"
-folder-hook chadsharpcub@gmail.com/ 'source ~/.mutt/cubgmail'
-
-## chad.ml.sharp@gmail.com
-source "~/.mutt/gmail2"
-folder-hook chad.ml.sharp@gmail.com/ 'source ~/.mutt/gmail2'
+folder-hook $folder 'source ~/.mutt/gmail1'
 
 ## Riseup email
 source "~/.mutt/riseup"
 folder-hook $folder 'source ~/.mutt/riseup'
+
+## chad.ml.sharp@gmail.com
+source "~/.mutt/gmail2"
+folder-hook $folder 'source ~/.mutt/gmail2'
+
+## Cub Gmail
+source "~/.mutt/cubgmail"
+folder-hook $folder 'source ~/.mutt/cubgmail'
+
