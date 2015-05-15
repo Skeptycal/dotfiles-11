@@ -17,4 +17,4 @@ set ssl_force_tls = yes
 unset ssl_starttls
 
 ## Hook -- IMPORTANT!
-account-hook $folder "set imap_user=chadsharpcub@gmail.com imap_pass=$my_pw_cubgmail"
+account-hook $folder "set imap_user=chadsharpcub@gmail.com"
