@@ -5,10 +5,12 @@ set folder = imaps://chad.ml.sharp@imap.gmail.com/
 set spoolfile = imaps://chad.ml.sharp@imap.gmail.com:993/INBOX
 set postponed = "+[Gmail]/Drafts"
 set record="+[Gmail]/Sent Mail"
-mailboxes "imaps://imap.gmail.com/INBOX" "imaps://imap.gmail.com/Drafts" "imaps://imap.gmail.com/Sent" "imaps://imap.gmail.com/Spam" "imaps://imap.gmail.com/Trash"
+
+mailboxes "imaps://imap.gmail.com/INBOX" "imaps://imap.gmail.com/[Gmail]/Drafts" "imaps://imap.gmail.com/[Gmail]/Sent Mail" "imaps://imap.gmail.com/[Gmail]/Spam" "imaps://imap.gmail.com/[Gmail]/Trash"
 
 ## Send options.
-set smtp_url=smtps://chad.ml.sharp:$my_pw_gmail2@smtp.gmail.com
+set smtp_url=smtps://chad.ml.sharp@smtp.gmail.com
+set smtp_pass=$my_pw_gmail2
 set realname='Chad Sharp'
 set from=chad.ml.sharp@gmail.com
 set hostname="gmail.com"
