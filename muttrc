@@ -28,6 +28,7 @@ macro pager B '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 bind index K sidebar-prev
 bind index J sidebar-next
 bind index L sidebar-open
+toggle sidebar_visible # Sidebar invisible by default
 # Keybindings
 bind editor <Tab> complete-query
 bind pager K  previous-line
@@ -116,10 +117,7 @@ color body brightblue  default "(^|[[:space:][:punct:]])/[^/]+/([[:space:][:punc
 color body blue default "( *[-+=#*~_]){6,}"
 
 
-
-## crossroads1112@gmail.com
-source "~/.mutt/gmail1"
-folder-hook $folder 'source ~/.mutt/gmail1'
+## Accounts
 
 ## Cub Gmail
 source "~/.mutt/cubgmail"
@@ -129,6 +127,15 @@ folder-hook $folder 'source ~/.mutt/cubgmail'
 source "~/.mutt/riseup"
 folder-hook $folder 'source ~/.mutt/riseup'
 
+## crossroads1112@gmail.com
+source "~/.mutt/gmail1"
+folder-hook $folder 'source ~/.mutt/gmail1'
+
+
 ## chad.ml.sharp@gmail.com
 source "~/.mutt/gmail2"
 folder-hook $folder 'source ~/.mutt/gmail2'
+
+## cmlsharp@umich.edu
+source "~/.mutt/michigan"
+folder-hook $folder 'source ~/.mutt/michigan'
