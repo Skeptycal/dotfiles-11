@@ -4,7 +4,7 @@ set imap_pass=$my_pw_gmail2
 set folder = imaps://chad.ml.sharp@imap.gmail.com/
 set spoolfile = imaps://chad.ml.sharp@imap.gmail.com:993/INBOX
 set postponed = "+[Gmail]/Drafts"
-set record="+[Gmail]/Sent Mail"
+unset record
 
 mailboxes "imaps://imap.gmail.com/INBOX" "imaps://imap.gmail.com/[Gmail]/Drafts" "imaps://imap.gmail.com/[Gmail]/Sent Mail" "imaps://imap.gmail.com/[Gmail]/Spam" "imaps://imap.gmail.com/[Gmail]/Trash"
 
